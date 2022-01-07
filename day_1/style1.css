@@ -1,0 +1,14 @@
+input[name^="p"]{
+    background-color: red;
+}
+
+/*伪类选择器*/
+input:focus{
+    font-size: 65px;
+}
+
+textarea:focus{
+    font-size: 65px;
+}
+
+

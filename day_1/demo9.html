@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+        /*没有被访问时*/
+        a:link{
+            color: aqua;
+            font-size: 60px;
+        }
+
+        /*有被访问时*/
+        a:visited{
+            color: aquamarine;
+        }
+
+        /*鼠标点击未释放*/
+        a:active{
+            color: blanchedalmond;
+        }
+
+        /*鼠标悬停*/
+        a:hover{
+            color: brown;
+            font-size: 70px;
+        }
+
+        /*输入框得到焦点，失去焦点*/
+        input:focus{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <!--  -->
+    <a href="http://news.baidu.com/">百度一下</a><br>
+    
+    <!--  -->
+    <input type="text">
+
+</body>
+</html>

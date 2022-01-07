@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单的使用</title>
+   
+    <link rel="stylesheet" href="./style1.css" type="text/css">
+</head>
+<body>
+    <h1>宠物调查问卷：</h1>
+    <!-- action动作-请求  method为当前表单提交的请求方式【get、post】 -->
+    <form action="http://localhost:8080/shop/login" method="post">
+        <!-- 文本、密码、邮箱 -->
+        主人姓名：<input type="text" name="username"/><br>
+        联系方式：<input type="email" name="phone"/><br>
+        宠物种类：<input type="password" name="petClass"/><br>
+        宠物品种：<input type="password" name="petType"/><br>
+        <!-- 单选框 -->
+        性别：<br>
+        雄性：<input type="radio" name="sex" value="雄" checked/><br>
+        雌性：<input type="radio" name="sex" value="雌"/><br>
+        <!-- 多选框 -->
+        饲料的选择：<br>
+        鱼肉：<input type="checkbox" name="food" checked value="鱼肉"/><br>
+        五谷：<input type="checkbox" name="food" checked value="五谷"/><br>
+        牛肉+鸡肉：<input type="checkbox" name="food" value="牛肉+鸡肉"/><br>
+        海鲜+蛋白质：<input type="checkbox" name="food" value="海鲜+蛋白质"/><br>
+
+        <!-- 下拉菜单 -->
+        <select name="favorite_food">
+            <option value="鱼肉">鱼肉</option>
+            <option value="五谷">五谷</option>
+            <option value="牛肉+鸡肉" selected>牛肉+鸡肉</option>
+            <option value="海鲜+蛋白质">海鲜+蛋白质</option>
+        </select><br>
+        <!-- 建议 -->
+        建议：<br>
+        <textarea name="advance" id="" cols="30" rows="10"></textarea>
+        <!-- 提交按钮 -->
+        <button type="submit">提交</button>
+    </form>
+</body>
+</html>

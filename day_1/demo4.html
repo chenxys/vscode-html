@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单的使用</title>
+</head>
+<body>
+    <!--action动作请求  method 提交方法（post，get）-->
+    <form action="http://localhost:8080/shop/login" method="post">
+        <!--文本 密码 邮箱-->
+        用户名：<input type="text" name="username"><br>
+        邮箱：<input type="email" name="email"><br>
+        密码：<input type="password" name="password"><br>
+
+        <!--个人描述-->
+        <textarea type="description" id="" cols="30" rows="10"></textarea>
+
+        <!--性别单选框-->
+        性别：<br>
+        男：<input type="radio" name="sex" value="男"><br>
+        女：<input type="radio" name="sex" value="女"><br>
+
+        <!--爱好 多选-->
+        爱好：<br>
+        吃饭：<input type="checkbox" name="hobby" value="吃饭"><br>
+        睡觉：<input type="checkbox" name="hobby" value="睡觉"><br>
+
+        <!--下拉菜单-->
+        <select name="major">
+            <option value="数学">数学</option>
+            <option value="语文">语文</option>
+            <option value="化学">化学</option>
+            <option value="生物" selected>生物</option>
+        </select>
+
+        <!--提交<input type="submit" value="提交">-->
+        <button type="submit">提交</button>
+
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表样式</title>
+    <style>
+        /*设置指定样式*/
+        ul{
+            list-style: inside;
+            font-size: 30px;
+            color: aqua;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        #li1{
+            list-style-image: url('./01.jpg');
+        
+        }
+
+        #li2{
+            list-style-image: url('./02.jpg');
+        }
+
+        #li3{
+            list-style-image: url('./03.jpg');
+        }
+
+        /*利用id给列表元素配图*/
+        #li4{
+            list-style-image: url('./04.jpg');
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="li1">清风阁</li>
+        <li id="li2">烟雨亭</li>
+        <li id="li3">望江台</li>
+        <li id="li4">赏月台</li>
+    </ul>
+</body>
+</html>
